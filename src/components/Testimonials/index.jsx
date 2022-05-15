@@ -1,8 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
 
 function Testimonials(props) {
-  return <div>Testimonials</div>;
+  return <section id="testimonials">Testimonials</section>;
 }
 
 Testimonials.propTypes = {};

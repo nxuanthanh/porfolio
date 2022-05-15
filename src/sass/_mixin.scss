@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+@mixin flex($align-items, $justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    @content;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        0% {
+            color: $white;
+        }
+        50% {
+            color: $primary;
+        }
+        100% {
+            color: $white;
+        }
+    }
+}
+
+@mixin animate($animation, $duration, $method, $times, $iteration-count) {
+    animation: $animation $duration $method $times $iteration-count;
+}

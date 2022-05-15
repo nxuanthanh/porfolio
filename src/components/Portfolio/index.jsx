@@ -1,8 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
 
 function Portfolio(props) {
-  return <div>Portfolio</div>;
+  return <section id="portfolio">Portfolio</section>;
 }
 
 Portfolio.propTypes = {};

@@ -8,13 +8,12 @@
     bottom: 0;
     outline: 0;
 
-    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -49,7 +48,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 section {
@@ -58,8 +57,8 @@ section {
 
 section > h2,
 section > h5 {
-    text-align: center;
     color: $light;
+    text-align: center;
 }
 
 section > h2 {
@@ -67,7 +66,7 @@ section > h2 {
     margin-bottom: 3rem;
 
     @include mobile {
-        margin-bottom: 3.2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -90,8 +89,8 @@ img {
     width: max-content;
     display: inline-block;
     color: $primary;
-    padding: 1.2rem 1.92rem;
-    border-radius: 0.64rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid $primary;
     transition: $transition;
