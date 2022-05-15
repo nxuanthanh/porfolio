@@ -1,0 +1,115 @@
+@use "sass" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    outline: 0;
+
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: $bg-color;
+    color: $white;
+    line-height: 1.7;
+    background-image: url(https://us.123rf.com/450wm/artshock/artshock1410/artshock141000108/32565304-galaxie-colorful-stars-texture-fond-seamless-pattern-.jpg?ver=6);
+}
+
+.container {
+    width: $lg-width;
+    margin: 0 auto;
+
+    @include mobile {
+        width: $ms-width;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+    text-align: center;
+    color: $light;
+}
+
+section > h2 {
+    color: $primary;
+    margin-bottom: 3rem;
+
+    @include mobile {
+        margin-bottom: 3.2rem;
+    }
+}
+
+.text-light {
+    color: $light;
+}
+
+a {
+    color: $primary;
+    transition: $transition;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: $primary;
+    padding: 1.2rem 1.92rem;
+    border-radius: 0.64rem;
+    cursor: pointer;
+    border: 1px solid $primary;
+    transition: $transition;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $bg-color;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: $white;
+    }
+
+    .btn:hover {
+        background-color: $white;
+        color: $bg-color;
+        border-color: transparent;
+    }
+}
