@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
-import { RiServiceLine } from 'react-icons/ri';
+import { IoCodeSlashSharp } from 'react-icons/io5';
+import { RiRoadMapLine, RiServiceLine } from 'react-icons/ri';
 import './navbar.scss';
 function Navbar(props) {
   const [active, setActive] = useState('#');
@@ -15,28 +16,44 @@ function Navbar(props) {
       </a>
       <a
         href="#about"
-        onClick={() => handleOnNavClick('#')}
+        onClick={() => handleOnNavClick('#about')}
         className={active === '#about' ? 'active' : ''}
       >
         <AiOutlineUser />
       </a>
       <a
         href="#experience"
-        onClick={() => handleOnNavClick('#')}
+        onClick={() => handleOnNavClick('#experience')}
         className={active === '#experience' ? 'active' : ''}
       >
         <BiBook />
       </a>
       <a
         href="#services"
-        onClick={() => handleOnNavClick('#')}
+        onClick={() => handleOnNavClick('#services')}
         className={active === '#services' ? 'active' : ''}
       >
         <RiServiceLine />
       </a>
       <a
+        href="#portfolio"
+        onClick={() => handleOnNavClick('#portfolio')}
+        className={active === '#portfolio' ? 'active' : ''}
+      >
+        <IoCodeSlashSharp />
+      </a>
+
+      <a
+        href="#road"
+        onClick={() => handleOnNavClick('#road')}
+        className={active === '#road' ? 'active' : ''}
+      >
+        <RiRoadMapLine />
+      </a>
+
+      <a
         href="#contact"
-        onClick={() => handleOnNavClick('#')}
+        onClick={() => handleOnNavClick('#contact')}
         className={active === '#contact' ? 'active' : ''}
       >
         <BiMessageSquareDetail />

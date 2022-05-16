@@ -1,0 +1,65 @@
+@use "sass" as *;
+
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    & .portfolio__item {
+        background: $bg-variant-color;
+        padding: 1.2rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        background: linear-gradient(90deg, $bg-variant-color 8%, #4d4d9b 18%, $bg-variant-color 33%);
+        background-size: 200% 100%;
+
+        @include keyframes(shine) {
+            to {
+                background-position-x: -200%;
+            }
+        }
+
+        @include animate(shine, 3s, linear, 0s, infinite);
+
+        &:hover {
+            transition: $transition;
+            border-color: $primary-variant;
+            background: transparent;
+
+            .portfolio__item__img img {
+                transform: scale(1.1);
+            }
+        }
+
+        &__img {
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+            img {
+                height: 20rem;
+                object-fit: cover;
+                transition: $transition;
+                width: 100%;
+            }
+        }
+
+        h3 {
+            margin: 1.2rem 0 2rem;
+        }
+
+        &-cta {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

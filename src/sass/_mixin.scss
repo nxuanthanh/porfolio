@@ -9,15 +9,7 @@
 
 @mixin keyframes($name) {
     @keyframes #{$name} {
-        0% {
-            color: $white;
-        }
-        50% {
-            color: $primary;
-        }
-        100% {
-            color: $white;
-        }
+        @content;
     }
 }
 

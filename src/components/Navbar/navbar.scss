@@ -27,5 +27,10 @@ nav {
         &:hover {
             background: rgba(0, 0, 0, 0.1);
         }
+
+        &.active {
+            color: $bg-color;
+            background-color: $primary;
+        }
     }
 }

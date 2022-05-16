@@ -20,7 +20,17 @@
         position: relative;
 
         & > h5 {
-            @include keyframes(textChange);
+            @include keyframes(textChange) {
+                0% {
+                    color: $white;
+                }
+                50% {
+                    color: $primary;
+                }
+                100% {
+                    color: $white;
+                }
+            }
 
             @include animate(textChange, 1s, linear, 0s, infinite);
         }
