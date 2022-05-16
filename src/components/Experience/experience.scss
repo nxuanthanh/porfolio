@@ -1,0 +1,65 @@
+@use "sass" as *;
+
+.experience__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        gap: 1rem;
+    }
+
+    & > div {
+        background-color: $bg-variant-color;
+        padding: 2.4rem 5rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+
+        @include tablet {
+            width: 80%;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            width: 100%;
+            padding: 2rem 1rem;
+        }
+
+        &:hover {
+            background: transparent;
+            border-color: $bg-variant-color;
+            cursor: default;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $primary;
+        }
+    }
+
+    .experience__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+
+        @include tablet {
+            padding: 1rem;
+        }
+    }
+
+    .experience__details {
+        display: flex;
+        gap: 1rem;
+
+        &-icon {
+            margin-top: 6px;
+            color: $primary;
+        }
+    }
+}

@@ -34,7 +34,7 @@ body {
     margin: 0 auto;
 
     @include mobile {
-        width: $ms-width;
+        width: $sm-width;
     }
 }
 
