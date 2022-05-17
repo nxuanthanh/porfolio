@@ -1,0 +1,73 @@
+@use "sass" as *;
+
+.container.testimonials__container {
+    width: 42%;
+    padding-bottom: 4rem;
+
+    .swiper-pagination-bullet {
+        background-color: $primary;
+    }
+
+    @include tablet {
+        width: 60%;
+    }
+
+    @include mobile {
+        width: $sm-width;
+    }
+
+    .client__avatar {
+        width: 4rem;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        border: 0.2rem solid $primary-variant;
+    }
+
+    .testimonial {
+        background: $bg-variant-color;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 2rem;
+        user-select: none;
+
+        .cv__content {
+            color: $light;
+            display: block;
+            width: 80%;
+            margin: 0.8rem auto 0;
+            font-weight: 300;
+
+            @include mobile {
+                width: $sm-width;
+            }
+        }
+    }
+}
+
+.cv-bubble {
+    margin: 0 auto 3rem;
+    overflow: hidden;
+    max-width: 14rem;
+    height: 14rem;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: url("../../assets/images/dubble.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @include keyframes(bubble) {
+        0%,
+        100% {
+            border-radius: 42% 56% 72% 285 / 42% 42% 56% 48%;
+        }
+        33% {
+            border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+        }
+        66% {
+            border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+        }
+    }
+
+    @include animate(bubble, 6s, linear, 0s, infinite);
+}

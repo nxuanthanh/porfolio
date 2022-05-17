@@ -16,10 +16,10 @@ function RoadMap(props) {
           </div>
           <div className="road__item__content">
             <div className="road__item__info">
-              <h3>Web fullstack expert</h3>
+              <h3>Javascript expert</h3>
               <p>
-                Next, I will become a professional full stack web developer with many programming
-                languages, many quality products
+                First of all, I want to master javascript and libraries, one of the best languages
+                ​​now
               </p>
             </div>
           </div>
@@ -51,11 +51,8 @@ function RoadMap(props) {
           </div>
           <div className="road__item__content">
             <div className="road__item__info">
-              <h3>Web fullstack expert</h3>
-              <p>
-                Next, I will become a professional full stack web developer with many programming
-                languages, many quality products
-              </p>
+              <h3>Good promotion</h3>
+              <p>Project manager, financial freedom, this could take a long time</p>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ function Portfolio(props) {
                 Github
               </a>
               <a
-                href={item.dem}
+                href={item.demo}
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"

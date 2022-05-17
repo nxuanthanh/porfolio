@@ -6,9 +6,10 @@ import {
   Navbar,
   Portfolio,
   Services,
+  RoadMap,
   Testimonials,
+  Footer,
 } from 'components';
-import RoadMap from 'components/Roadmap';
 import React from 'react';
 import './App.scss';
 
@@ -24,6 +25,7 @@ function App(props) {
       <RoadMap />
       <Testimonials />
       <Contact />
+      <Footer />
     </>
   );
 }
