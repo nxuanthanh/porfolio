@@ -1,19 +1,29 @@
-import React from 'react';
+import TooltipContent from 'features/TooltipContent';
+import useHover from 'Hooks/useHover';
+import React, { useState } from 'react';
 import { FaFacebookF, FaGithub } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import { IoLogoTwitter } from 'react-icons/io5';
+import Astro from 'assets/images/astro.png';
 import './footer.scss';
 function Footer(props) {
+  const { hovered, nodeRef } = useHover();
+  const [coords, setCoords] = useState({});
+  const handleHover = (event) => {
+    setCoords(event.target.getBoundingClientRect());
+  };
   return (
     <footer>
-      <a href="#egator" className="footer__logo">
-        Thanh's Portfolio
+      <img src={Astro} alt="" className="astro" />
+      <a href="#" className="footer__logo">
+        {hovered && <TooltipContent coords={coords} />}
+        <h1 ref={nodeRef} onMouseOver={handleHover}>
+          {' '}
+          Thanh's Portfolio
+        </h1>
       </a>
 
       <ul className="permalinks">
-        <li>
-          <a href="#">Home</a>
-        </li>
         <li>
           <a href="#about">About</a>
         </li>
@@ -30,7 +40,7 @@ function Footer(props) {
           <a href="#road">Roadmap</a>
         </li>
         <li>
-          <a href="#testimonials">testimonials</a>
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -54,7 +64,7 @@ function Footer(props) {
 
       <div className="footer__copyright">
         <small>
-          A portfolio website coded by ReactJS by Hoang Dung &copy; 2022. Reference: Egator.
+          A portfolio website coded by ReactJS by Nguyen Xuan Thanh &copy; 2022. Reference: Egator.
         </small>
       </div>
     </footer>

@@ -1,21 +1,48 @@
 @use "sass" as *;
 
 footer {
-    background-color: $primary;
+    background: rgba(0, 0, 0, 0.8);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 50%;
+        height: 0.1rem;
+        background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+        position: absolute;
+        top: 0;
+        left: 25%;
+        opacity: 0.5;
+
+        @include keyframes(dance) {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @include animate(dance, 1s, linear, 0s, infinite);
+    }
 
     a {
-        color: $bg-color;
+        color: $primary;
     }
 
     .footer__logo {
         font-size: 2rem;
-        font-weight: 500;
-        margin-bottom: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
         display: inline-block;
+        margin-top: 2rem;
     }
 
     .permalinks {
@@ -33,23 +60,40 @@ footer {
         margin-bottom: 4rem;
 
         a {
-            background: $bg-color;
-            color: $white;
-            padding: 0.8rem;
-            border-radius: 0.7rem;
-            display: flex;
-            border: 1px solid transparent;
+            color: $primary;
+            padding: 0.2rem;
+            font-size: 1.2rem;
 
             &:hover {
-                background: transparent;
-                color: $bg-color;
-                border-color: $bg-color;
+                color: $white;
+                transform: scale(1.4);
             }
         }
     }
 
     .footer__copyright {
         margin-bottom: 4rem;
-        color: $bg-color;
+    }
+
+    .astro {
+        position: absolute;
+        width: 15%;
+        bottom: 2rem;
+        right: 0;
+        transition: $transition;
+        cursor: default;
+        @include keyframes(astro__animation) {
+            0% {
+                transform: rotate(-10deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+
+        @include animate(astro__animation, 3s, linear, 0s, infinite);
     }
 }

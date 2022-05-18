@@ -1,9 +1,26 @@
-import React from 'react';
 import { FiSmartphone } from 'react-icons/fi';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import './contact.scss';
 function Contact(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_c8x6poi', 'template_kq1lmqr', form.current, 'zSIk3TtsJumna5AZ6').then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+
+    e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -40,8 +57,8 @@ function Contact(props) {
             </a>
           </article>
         </div>
-        <form action="">
-          <input type="text" name="fullname" placeholder="Your Full Name" required />
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
           <button type="submit" className="btn btn-primary">

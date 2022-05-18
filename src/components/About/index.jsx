@@ -22,15 +22,20 @@ function About(props) {
             <article className="about__card">
               <CgWorkAlt className="about__icon" />
               <h5>Experience</h5>
-              <small>Completing the CyberSoft's fullstack web programming course</small>
+              <small>
+                Completing the Build Responsive Real-World Websites with HTML and CSS course, The
+                Complete JavaScript Course 2022: From Zero to Expert course, ReactJS cho người mới
+                bắt đầu 2020 course on udemy...
+              </small>
             </article>
 
             <article className="about__card">
               <BsCode className="about__icon" />
               <h5>Programming languages and libraries</h5>
               <small>
-                Programming languages: HTML, CSS, Javascript, Python.
-                <br /> Framework and libraries: React, Bootstrap, TailwindCSS...
+                Programming languages: HTML, CSS, Javascript, TypeScript, Java, C/C++,
+                <br /> Framework and libraries: React, Bootstrap, Redux/Redux toolkit,
+                TailwindCSS...
               </small>
             </article>
 
@@ -38,21 +43,22 @@ function About(props) {
               <VscProject className="about__icon" />
               <h5>Demo Projects</h5>
               <small>
-                HDTicket, HDMuvi, Weather miniBOT, RealEstate Villa landing page, Adventure travel
-                landing page, SpotifyHD music website...
+                T-store, PreviewMovie Website, Ecommercet-store, My Portfolio, Post App, Photo
+                App,Pic game,Bankist,Color Matching Game, Tic-tac-toe Game...
               </small>
             </article>
           </div>
           <p>
             My full name is Nguyen Xuan Thanh. I'm a 4th year student at University of Technology
-            and Educations - The University of Danang. After that, I worked at the Institute for
-            Policy Research on Agriculture and Health, University of Economics Ho Chi Minh City for
-            more than 2 years. This job requires me to go to many places, visit many websites to
-            collect and process information and data of agencies, ministries, and press news, but in
-            general it is quite bad... <br></br> <br></br> With passion about visual arts as well as
-            many other questions, I decided to learn more about cybersoft's fullstack website
-            program from the end of 2021. My future direction is to become a Fullstack website
-            developer with financial freedom and connection expansion.
+            and Educations - The University of Danang. I registered and accomplished many online
+            codding-course in Udemy and F8, this make my codding-skill better. During this time, I
+            learnt some programming languages as C/C++, C#, Python, Java...basically.<br></br>
+            <br></br>
+            Specially, I really interested in front-end aspect. At university, I and my friends has
+            gathered together and created a team and we have finished some app project ourselves.
+            This help me a lot because I have learnt many things include codding-skill,
+            teamwork-skill, handle progress smoothly. All of our project are written in HTML, CSS,
+            SCSS, JS, Bootstrap 5, MUI 5, Redux tookit, ReactJS, e...
           </p>
           <a className="btn btn-primary" href="#contact">
             Let's Talk

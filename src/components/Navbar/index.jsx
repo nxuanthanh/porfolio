@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
-import { IoCodeSlashSharp } from 'react-icons/io5';
+import { IoCodeSlashSharp, IoInformation } from 'react-icons/io5';
 import { RiRoadMapLine, RiServiceLine } from 'react-icons/ri';
 import './navbar.scss';
 function Navbar(props) {
@@ -49,6 +49,14 @@ function Navbar(props) {
         className={active === '#road' ? 'active' : ''}
       >
         <RiRoadMapLine />
+      </a>
+
+      <a
+        href="#testimonials"
+        onClick={() => handleOnNavClick('#testimonials')}
+        className={active === '#testimonials' ? 'active' : ''}
+      >
+        <IoInformation />
       </a>
 
       <a

@@ -3,7 +3,7 @@
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 38% 58%;
+    grid-template-columns: 34% 58%;
     gap: 12%;
 
     @include tablet {
@@ -32,6 +32,14 @@
         &:hover {
             background: transparent;
             border-color: $primary-variant;
+
+            a::after {
+                width: 100%;
+            }
+
+            .contact__option-icon {
+                color: #c471ed;
+            }
         }
 
         &-icon {
@@ -43,6 +51,18 @@
             font-size: 0.8rem;
             margin-top: 0.7rem;
             display: inline-block;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 0;
+                height: 0.1rem;
+                background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                transition: width 0.3s ease-in-out;
+            }
         }
     }
 
