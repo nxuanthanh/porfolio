@@ -1,19 +1,19 @@
-import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 } from './images-data';
+import { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10 } from './images-data';
 
 export const portfolios = [
   {
     id: 1,
+    image: IMG10,
+    title: 'Xemphim.fun clone',
+    github: 'https://github.com/nxuanthanh/ever-film-app',
+    demo: 'https://ever-film-app-wneh.vercel.app',
+  },
+  {
+    id: 2,
     image: IMG1,
     title: 'T-Shop',
     github: 'https://github.com/nxuanthanh/t-shop',
     demo: 'https://t-shop-ruddy.vercel.app/products',
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: 'React Movie app',
-    github: 'https://github.com/nxuanthanh/react-movies-app',
-    demo: 'https://react-movies-app-ten.vercel.app/',
   },
   {
     id: 3,
@@ -45,17 +45,17 @@ export const portfolios = [
   },
   {
     id: 7,
-    image: IMG7,
-    title: 'Pic game: Javascript',
-    github: 'https://github.com/nxuanthanh/pig-game',
-    demo: 'https://ecommercet-store.vercel.app/',
-  },
-  {
-    id: 8,
     image: IMG8,
     title: 'Bankist: Javascript',
     github: 'https://github.com/nxuanthanh/bankist',
     demo: 'https://bankist-umber.vercel.app/',
+  },
+  {
+    id: 8,
+    image: IMG7,
+    title: 'Pic game: Javascript',
+    github: 'https://github.com/nxuanthanh/pig-game',
+    demo: 'https://ecommercet-store.vercel.app/',
   },
   {
     id: 9,

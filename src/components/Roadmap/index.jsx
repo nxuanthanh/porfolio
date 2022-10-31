@@ -18,8 +18,8 @@ function RoadMap(props) {
             <div className="road__item__info">
               <h3>Javascript expert</h3>
               <p>
-                First of all, I want to master javascript and libraries, one of the best languages
-                ​​now
+                First of all, I want to master Javascript, Typescript and Libraries, one of the best
+                languages ​​now
               </p>
             </div>
           </div>

@@ -7,5 +7,6 @@ import IMG6 from 'assets/images/photo-app.png';
 import IMG7 from 'assets/images/pic-game.png';
 import IMG8 from 'assets/images/bankist.png';
 import IMG9 from 'assets/images/color-matching-game.png';
+import IMG10 from 'assets/images/ever-film.png';
 
-export { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9 };
+export { IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10 };

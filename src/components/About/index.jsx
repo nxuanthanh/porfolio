@@ -49,16 +49,14 @@ function About(props) {
             </article>
           </div>
           <p>
-            My full name is Nguyen Xuan Thanh. I'm a 4th year student at University of Technology
-            and Educations - The University of Danang. I registered and accomplished many online
-            codding-course in Udemy and F8, this make my codding-skill better. During this time, I
-            learnt some programming languages as C/C++, C#, Python, Java...basically.<br></br>
+            My full name is Nguyen Xuan Thanh. I'm a frontend developer with 6 months of experience
+            working with real-life projects at company. I have a great love for information
+            technology and the spirit of working hard, always learning, determined to pursue the
+            goal until the end. This help me a lot because I have learnt many things include
+            codding-skill, teamwork-skill, handle progress smoothly<br></br>
             <br></br>
-            Specially, I really interested in front-end aspect. At university, I and my friends has
-            gathered together and created a team and we have finished some app project ourselves.
-            This help me a lot because I have learnt many things include codding-skill,
-            teamwork-skill, handle progress smoothly. All of our project are written in HTML, CSS,
-            SCSS, JS, Bootstrap 5, MUI 5, Redux tookit, ReactJS, e...
+            In addition, I also have knowledge about some programming languages as C/C++, C#,
+            Python, Java...basically.
           </p>
           <a className="btn btn-primary" href="#contact">
             Let's Talk
